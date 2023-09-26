@@ -11,6 +11,7 @@
 		45F9676F2AC35BC40047C17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F9676E2AC35BC40047C17C /* SceneDelegate.swift */; };
 		45F967762AC35BC50047C17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F967752AC35BC50047C17C /* Assets.xcassets */; };
 		45F967792AC35BC50047C17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F967772AC35BC50047C17C /* LaunchScreen.storyboard */; };
+		45F967812AC35D750047C17C /* TableOfContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F967802AC35D750047C17C /* TableOfContentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		45F967752AC35BC50047C17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45F967782AC35BC50047C17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45F9677A2AC35BC50047C17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45F967802AC35D750047C17C /* TableOfContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfContentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				45F9676C2AC35BC40047C17C /* AppDelegate.swift */,
 				45F9676E2AC35BC40047C17C /* SceneDelegate.swift */,
+				45F967802AC35D750047C17C /* TableOfContentsViewController.swift */,
 				45F967752AC35BC50047C17C /* Assets.xcassets */,
 				45F967772AC35BC50047C17C /* LaunchScreen.storyboard */,
 				45F9677A2AC35BC50047C17C /* Info.plist */,
@@ -133,6 +136,7 @@
 			files = (
 				45F9676D2AC35BC40047C17C /* AppDelegate.swift in Sources */,
 				45F9676F2AC35BC40047C17C /* SceneDelegate.swift in Sources */,
+				45F967812AC35D750047C17C /* TableOfContentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
