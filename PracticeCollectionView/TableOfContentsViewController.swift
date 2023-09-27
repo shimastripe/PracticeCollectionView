@@ -5,6 +5,7 @@
 //  Created by shimastripe on 2023/09/27.
 //
 
+import DiffableDataSource
 import UIKit
 
 final class TableOfContentsViewController: UIViewController {
@@ -16,14 +17,14 @@ final class TableOfContentsViewController: UIViewController {
     class OutlineItem: Hashable {
         let title: String
         let subitems: [OutlineItem]
-        let outlineViewController: UIViewController.Type?
+        let outlineViewBuilder: (() -> UIViewController?)?
 
         init(title: String,
-             viewController: UIViewController.Type? = nil,
+             outlineViewBuilder: (() -> UIViewController?)? = nil,
              subitems: [OutlineItem] = []) {
             self.title = title
             self.subitems = subitems
-            self.outlineViewController = viewController
+            self.outlineViewBuilder = outlineViewBuilder
         }
         func hash(into hasher: inout Hasher) {
             hasher.combine(identifier)
@@ -47,8 +48,8 @@ final class TableOfContentsViewController: UIViewController {
     private lazy var menuItems: [OutlineItem] = {
         return [
             OutlineItem(title: "1.セルのアニメーションの動きを知る", subitems: [
-                OutlineItem(title: "DiffableDataSource", viewController: UIViewController.self),
-                OutlineItem(title: "SwiftUI", viewController: UIViewController.self),
+                OutlineItem(title: "DiffableDataSource", outlineViewBuilder: { UIViewController() }),
+                OutlineItem(title: "SwiftUI", outlineViewBuilder: { CellAnimationViewController() }),
             ]),
             OutlineItem(title: "2.セルの更新を知る", subitems: []),
             OutlineItem(title: "3.カスタムセルを登録する", subitems: []),
@@ -131,8 +132,8 @@ extension TableOfContentsViewController: UICollectionViewDelegate {
 
         collectionView.deselectItem(at: indexPath, animated: true)
 
-        if let viewController = menuItem.outlineViewController {
-            navigationController?.pushViewController(viewController.init(), animated: true)
+        if let viewController = menuItem.outlineViewBuilder?() {
+            navigationController?.pushViewController(viewController, animated: true)
         }
     }
 }
