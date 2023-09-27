@@ -48,8 +48,8 @@ final class TableOfContentsViewController: UIViewController {
     private lazy var menuItems: [OutlineItem] = {
         return [
             OutlineItem(title: "1.セルのアニメーションの動きを知る", subitems: [
-                OutlineItem(title: "DiffableDataSource", outlineViewBuilder: { UIViewController() }),
-                OutlineItem(title: "SwiftUI", outlineViewBuilder: { CellAnimationViewController() }),
+                OutlineItem(title: "DiffableDataSource", outlineViewBuilder: { CellAnimationViewController() }),
+                OutlineItem(title: "SwiftUI", outlineViewBuilder: { CellAnimationHostingViewController() }),
             ]),
             OutlineItem(title: "2.セルの更新を知る", subitems: []),
             OutlineItem(title: "3.カスタムセルを登録する", subitems: []),

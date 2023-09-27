@@ -36,7 +36,7 @@ public struct ContentView: View {
     }
 }
 
-public class CellAnimationViewController: UIHostingController<ContentView> {
+public class CellAnimationHostingViewController: UIHostingController<ContentView> {
     public init() {
         super.init(rootView: .init())
     }
