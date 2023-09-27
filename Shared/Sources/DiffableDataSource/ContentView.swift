@@ -9,8 +9,30 @@ import SwiftUI
 import UIKit
 
 public struct ContentView: View {
+
+    @State private var list: [UUID] = (1...5).map { _ in UUID() }
+
     public var body: some View {
-        Text("Hello World!")
+        List {
+            ForEach(list, id: \.self) {
+                Text("\($0)")
+            }
+        }
+        .animation(.default, value: list)
+        .toolbar {
+            Button("-1") {
+                guard !list.isEmpty else { return }
+                list.removeLast()
+            }
+            Button("+1") {
+                list.append(.init())
+            }
+        }
+        .overlay {
+            if list.isEmpty {
+                ContentUnavailableView("リストが空です", systemImage: "figure.yoga")
+            }
+        }
     }
 }
 
