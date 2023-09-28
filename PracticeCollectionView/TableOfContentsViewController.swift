@@ -5,6 +5,7 @@
 //  Created by shimastripe on 2023/09/27.
 //
 
+import CompositionalLayout
 import CustomCell
 import DiffableDataSource
 import ReconfigureDataSource
@@ -40,7 +41,8 @@ final class TableOfContentsViewController: UIViewController {
 
     @ViewLoading
     var outlineCollectionView: UICollectionView
-    var dataSource: UICollectionViewDiffableDataSource<Section, OutlineItem>! = nil
+    @ViewLoading
+    var dataSource: UICollectionViewDiffableDataSource<Section, OutlineItem>
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +67,9 @@ final class TableOfContentsViewController: UIViewController {
                 OutlineItem(title: "ContentConfiguration / Background", outlineViewBuilder: { CustomCellViewController() }),
                 OutlineItem(title: "HostingConfiguration", outlineViewBuilder: { HostingViewController() }),
             ]),
-            OutlineItem(title: "5.List以外のレイアウト方式を知る", subitems: []),
+            OutlineItem(title: "5.List以外のレイアウト方式を知る", subitems: [
+                OutlineItem(title: "CompositionalLayout", outlineViewBuilder: { CompositionalLayoutViewController() }),
+            ]),
         ]
     }()
 }

@@ -44,7 +44,8 @@ public final class CellReconfigureViewController: UIViewController {
 
     @ViewLoading
     var collectionView: UICollectionView
-    var dataSource: UICollectionViewDiffableDataSource<Section, UUID>! = nil
+    @ViewLoading
+    var dataSource: UICollectionViewDiffableDataSource<Section, UUID>
     @ViewLoading
     var minusButton: UIButton
     @ViewLoading

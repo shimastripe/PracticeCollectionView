@@ -8,6 +8,9 @@ let package = Package(
     platforms: [.iOS(.v17)],
     products: [
         .library(
+            name: "CompositionalLayout",
+            targets: ["CompositionalLayout"]),
+        .library(
             name: "CustomCell",
             targets: ["CustomCell"]),
         .library(
@@ -21,6 +24,8 @@ let package = Package(
             targets: ["Registration"]),
     ],
     targets: [
+        .target(
+            name: "CompositionalLayout"),
         .target(
             name: "CustomCell"),
         .target(
