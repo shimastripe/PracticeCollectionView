@@ -10,7 +10,7 @@ import UIKit
 
 public struct ContentView: View {
 
-    static let colorData: [Color] = [.blue, .red, .yellow, .brown, .purple, .mint]
+    static let colorData: [Color] = [.blue, .red, .yellow, .brown, .purple, .mint, .cyan, .gray, .teal]
 
     struct Item: Hashable, Identifiable {
         let id: UUID
