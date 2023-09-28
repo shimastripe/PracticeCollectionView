@@ -61,6 +61,7 @@ final class TableOfContentsViewController: UIViewController {
             ]),
             OutlineItem(title: "4.セルの中を実装する", subitems: [
                 OutlineItem(title: "ContentConfiguration / Background", outlineViewBuilder: { CustomCellViewController() }),
+                OutlineItem(title: "HostingConfiguration", outlineViewBuilder: { HostingViewController() }),
             ]),
             OutlineItem(title: "5.List以外のレイアウト方式を知る", subitems: []),
         ]
