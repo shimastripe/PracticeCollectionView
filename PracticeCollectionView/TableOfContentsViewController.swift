@@ -6,6 +6,7 @@
 //
 
 import DiffableDataSource
+import ReconfigureDataSource
 import UIKit
 
 final class TableOfContentsViewController: UIViewController {
@@ -51,7 +52,9 @@ final class TableOfContentsViewController: UIViewController {
                 OutlineItem(title: "DiffableDataSource", outlineViewBuilder: { CellAnimationViewController() }),
                 OutlineItem(title: "SwiftUI", outlineViewBuilder: { CellAnimationHostingViewController() }),
             ]),
-            OutlineItem(title: "2.セルの更新を知る", subitems: []),
+            OutlineItem(title: "2.セルの更新を知る", subitems: [
+                OutlineItem(title: "SwiftUI", outlineViewBuilder: { ReconfigureHostingViewController() }),
+            ]),
             OutlineItem(title: "3.カスタムセルを登録する", subitems: []),
             OutlineItem(title: "4.セルの中を実装する", subitems: []),
             OutlineItem(title: "5.List以外のレイアウト方式を知る", subitems: []),

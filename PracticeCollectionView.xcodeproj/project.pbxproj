@@ -13,6 +13,7 @@
 		45F967792AC35BC50047C17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F967772AC35BC50047C17C /* LaunchScreen.storyboard */; };
 		45F967812AC35D750047C17C /* TableOfContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F967802AC35D750047C17C /* TableOfContentsViewController.swift */; };
 		45F967852AC362A60047C17C /* DiffableDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 45F967842AC362A60047C17C /* DiffableDataSource */; };
+		45F967872AC496B80047C17C /* ReconfigureDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 45F967862AC496B80047C17C /* ReconfigureDataSource */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F967852AC362A60047C17C /* DiffableDataSource in Frameworks */,
+				45F967872AC496B80047C17C /* ReconfigureDataSource in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,7 @@
 			name = PracticeCollectionView;
 			packageProductDependencies = (
 				45F967842AC362A60047C17C /* DiffableDataSource */,
+				45F967862AC496B80047C17C /* ReconfigureDataSource */,
 			);
 			productName = PracticeCollectionView;
 			productReference = 45F967692AC35BC40047C17C /* PracticeCollectionView.app */;
@@ -367,6 +370,10 @@
 		45F967842AC362A60047C17C /* DiffableDataSource */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DiffableDataSource;
+		};
+		45F967862AC496B80047C17C /* ReconfigureDataSource */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ReconfigureDataSource;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

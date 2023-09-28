@@ -10,9 +10,14 @@ let package = Package(
         .library(
             name: "DiffableDataSource",
             targets: ["DiffableDataSource"]),
+        .library(
+            name: "ReconfigureDataSource",
+            targets: ["ReconfigureDataSource"]),
     ],
     targets: [
         .target(
             name: "DiffableDataSource"),
+        .target(
+            name: "ReconfigureDataSource"),
     ]
 )
