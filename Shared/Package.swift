@@ -16,6 +16,9 @@ let package = Package(
         .library(
             name: "ReconfigureDataSource",
             targets: ["ReconfigureDataSource"]),
+        .library(
+            name: "Registration",
+            targets: ["Registration"]),
     ],
     targets: [
         .target(
@@ -24,5 +27,7 @@ let package = Package(
             name: "DiffableDataSource"),
         .target(
             name: "ReconfigureDataSource"),
+        .target(
+            name: "Registration"),
     ]
 )

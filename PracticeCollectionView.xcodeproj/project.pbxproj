@@ -15,6 +15,7 @@
 		45F967852AC362A60047C17C /* DiffableDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 45F967842AC362A60047C17C /* DiffableDataSource */; };
 		45F967872AC496B80047C17C /* ReconfigureDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 45F967862AC496B80047C17C /* ReconfigureDataSource */; };
 		45F967892AC55D610047C17C /* CustomCell in Frameworks */ = {isa = PBXBuildFile; productRef = 45F967882AC55D610047C17C /* CustomCell */; };
+		45F9678B2AC5743D0047C17C /* Registration in Frameworks */ = {isa = PBXBuildFile; productRef = 45F9678A2AC5743D0047C17C /* Registration */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 				45F967852AC362A60047C17C /* DiffableDataSource in Frameworks */,
 				45F967892AC55D610047C17C /* CustomCell in Frameworks */,
 				45F967872AC496B80047C17C /* ReconfigureDataSource in Frameworks */,
+				45F9678B2AC5743D0047C17C /* Registration in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +102,7 @@
 				45F967842AC362A60047C17C /* DiffableDataSource */,
 				45F967862AC496B80047C17C /* ReconfigureDataSource */,
 				45F967882AC55D610047C17C /* CustomCell */,
+				45F9678A2AC5743D0047C17C /* Registration */,
 			);
 			productName = PracticeCollectionView;
 			productReference = 45F967692AC35BC40047C17C /* PracticeCollectionView.app */;
@@ -381,6 +384,10 @@
 		45F967882AC55D610047C17C /* CustomCell */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CustomCell;
+		};
+		45F9678A2AC5743D0047C17C /* Registration */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Registration;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

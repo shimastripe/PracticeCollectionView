@@ -8,6 +8,7 @@
 import CustomCell
 import DiffableDataSource
 import ReconfigureDataSource
+import Registration
 import UIKit
 
 final class TableOfContentsViewController: UIViewController {
@@ -58,6 +59,7 @@ final class TableOfContentsViewController: UIViewController {
                 OutlineItem(title: "SwiftUI", outlineViewBuilder: { ReconfigureHostingViewController() }),
             ]),
             OutlineItem(title: "3.カスタムセルを登録する", subitems: [
+                OutlineItem(title: "CellRegistration", outlineViewBuilder: { CellRegistrationViewController() }),
             ]),
             OutlineItem(title: "4.セルの中を実装する", subitems: [
                 OutlineItem(title: "ContentConfiguration / Background", outlineViewBuilder: { CustomCellViewController() }),
