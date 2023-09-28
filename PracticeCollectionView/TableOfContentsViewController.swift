@@ -5,6 +5,7 @@
 //  Created by shimastripe on 2023/09/27.
 //
 
+import CustomCell
 import DiffableDataSource
 import ReconfigureDataSource
 import UIKit
@@ -56,8 +57,11 @@ final class TableOfContentsViewController: UIViewController {
                 OutlineItem(title: "DiffableDataSource (Reload / Reconfigure)", outlineViewBuilder: { CellReconfigureViewController() }),
                 OutlineItem(title: "SwiftUI", outlineViewBuilder: { ReconfigureHostingViewController() }),
             ]),
-            OutlineItem(title: "3.カスタムセルを登録する", subitems: []),
-            OutlineItem(title: "4.セルの中を実装する", subitems: []),
+            OutlineItem(title: "3.カスタムセルを登録する", subitems: [
+            ]),
+            OutlineItem(title: "4.セルの中を実装する", subitems: [
+                OutlineItem(title: "ContentConfiguration / Background", outlineViewBuilder: { CustomCellViewController() }),
+            ]),
             OutlineItem(title: "5.List以外のレイアウト方式を知る", subitems: []),
         ]
     }()

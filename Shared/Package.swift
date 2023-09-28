@@ -8,6 +8,9 @@ let package = Package(
     platforms: [.iOS(.v17)],
     products: [
         .library(
+            name: "CustomCell",
+            targets: ["CustomCell"]),
+        .library(
             name: "DiffableDataSource",
             targets: ["DiffableDataSource"]),
         .library(
@@ -15,6 +18,8 @@ let package = Package(
             targets: ["ReconfigureDataSource"]),
     ],
     targets: [
+        .target(
+            name: "CustomCell"),
         .target(
             name: "DiffableDataSource"),
         .target(
